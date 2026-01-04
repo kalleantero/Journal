@@ -2790,3 +2790,24 @@ blockquote.kg-blockquote-alt {
         padding: 0 4vmin;
     }
 }
+.gh-about-social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.6rem;
+}
+.gh-about-social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-secondary-text);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.gh-about-social-link:hover {
+    color: var(--color-darker-gray);
+}
+.gh-about-social-link svg {
+    width: 1.6rem;
+    height: 1.6rem;
+}

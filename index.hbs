@@ -51,6 +51,31 @@
                                 {{#if bio}}
                                 <p class="gh-about-description">{{bio}}</p>
                                 {{/if}}
+
+                                <div class="gh-about-social">
+                                    {{#if instagram}}
+                                    <a class="gh-about-social-link" href="{{social_url type='instagram'}}"
+                                        target="_blank" rel="noopener">
+                                        {{> icons/instagram}} Instagram
+                                    </a>
+                                    {{/if}}
+                                    {{#if linkedin}}
+                                    <a class="gh-about-social-link" href="{{social_url type='linkedin'}}"
+                                        target="_blank" rel="noopener">
+                                        {{> icons/linkedin}} LinkedIn
+                                    </a>
+                                    {{/if}}
+                                    {{#if bluesky}}
+                                    <a class="gh-about-social-link" href="{{social_url type='bluesky'}}" target="_blank"
+                                        rel="noopener">
+                                        {{> icons/bluesky}} Bluesky
+                                    </a>
+                                    {{/if}}
+                                    <a class="gh-about-social-link" href="https://github.com/kalleantero"
+                                        target="_blank" rel="noopener">
+                                        {{> icons/github}} GitHub
+                                    </a>
+                                </div>
                             </section>
                         </div>
                         {{/foreach}}
